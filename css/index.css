@@ -163,10 +163,11 @@ header {
   display: flex;
   background-color: #22bcb9;
   border-bottom: 2px solid black;
-  height: 120px;
+  height: 140px;
   position: fixed;
   width: 100%;
-  max-width: 900px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 header h1 {
   width: 25%;
@@ -174,7 +175,7 @@ header h1 {
   padding-top: 20px;
 }
 header nav {
-  padding-top: 90px;
+  padding-top: 110px;
   width: 60%;
   display: flex;
   justify-content: space-between;
@@ -182,7 +183,7 @@ header nav {
 }
 header nav a {
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: black;
 }
 header nav a:hover {
@@ -190,12 +191,15 @@ header nav a:hover {
   text-decoration: underline;
 }
 header button {
-  width: 120px;
-  height: 50px;
+  width: 100px;
+  height: 40px;
   border-radius: 15px;
   border: 2px solid black;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: 1%;
+  font-size: 1.6rem;
+  color: white;
+  background: black;
 }
 header button:hover {
   transform: scale(1.1);
@@ -203,7 +207,21 @@ header button:hover {
   color: #22bcb9;
 }
 html {
-  max-width: 900px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+}
+.container .about {
+  display: flex;
+  padding-top: 220px;
+  padding-left: 1%;
+  border: 1px solid red;
+}
+.container .about .aboutSection {
+  width: 49%;
+  border: 1px solid red;
+}
+.container .about img {
+  width: 49%;
+  height: 400px;
 }
