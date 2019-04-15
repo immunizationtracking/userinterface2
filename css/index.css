@@ -246,11 +246,13 @@ html {
   width: 53%;
   height: 400px;
   border-radius: 20px;
+  border: 1px solid black;
 }
 .container .personal {
   border-top: 1px dashed black;
-  padding-top: 140px;
+  padding-top: 100px;
   display: flex;
+  padding-bottom: 80px;
 }
 .container .personal .personalSection {
   width: 49%;
@@ -264,10 +266,12 @@ html {
   line-height: 3rem;
 }
 .container .personal img {
-  width: 45%;
+  width: 43%;
   order: -1;
   height: 400px;
+  margin-left: 2%;
   border-radius: 30px;
+  border: 1px solid black;
 }
 .container .personal button {
   width: 120px;
@@ -282,4 +286,18 @@ html {
 .container .personal button:hover {
   background-color: black;
   color: #22bcb9;
+}
+.container .health {
+  border-top: 1px dashed black;
+  padding-top: 40px;
+  display: flex;
+}
+.container .health .healthSection {
+  width: 45%;
+}
+.container .health img {
+  width: 53%;
+  height: 400px;
+  border-radius: 30px;
+  border: 1px solid black;
 }
