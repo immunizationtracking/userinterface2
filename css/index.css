@@ -206,6 +206,14 @@ header button:hover {
   text-decoration: underline;
   color: #22bcb9;
 }
+footer {
+  background-color: #22bcb9;
+  height: 140px;
+  padding-top: 60px;
+  padding-left: 38%;
+  margin-top: 70px;
+  border-top: 2px solid black;
+}
 html {
   max-width: 1200px;
   width: 100%;
@@ -223,7 +231,7 @@ html {
 }
 .container .about .aboutSection h2 {
   padding-left: 10%;
-  padding-bottom: 5%;
+  padding-bottom: 20px;
 }
 .container .about .aboutSection p {
   line-height: 3rem;
@@ -260,7 +268,7 @@ html {
 }
 .container .personal .personalSection h2 {
   padding-left: 10%;
-  padding-bottom: 5%;
+  padding-bottom: 20px;
 }
 .container .personal .personalSection p {
   line-height: 3rem;
@@ -289,11 +297,34 @@ html {
 }
 .container .health {
   border-top: 1px dashed black;
-  padding-top: 40px;
+  padding-top: 80px;
   display: flex;
 }
 .container .health .healthSection {
   width: 45%;
+  padding-left: 1%;
+  padding-right: 2%;
+}
+.container .health .healthSection h2 {
+  padding-left: 10%;
+  padding-bottom: 20px;
+}
+.container .health .healthSection p {
+  line-height: 3rem;
+}
+.container .health .healthSection button {
+  width: 120px;
+  height: 50px;
+  background-color: #22bcb9;
+  border-radius: 20px;
+  border: 1px solid black;
+  font-size: 1.6rem;
+  margin-left: 25%;
+  margin-top: 30px;
+}
+.container .health .healthSection button:hover {
+  background-color: black;
+  color: #22bcb9;
 }
 .container .health img {
   width: 53%;

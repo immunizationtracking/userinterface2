@@ -16,7 +16,7 @@ html {
       padding-top: 40px;
       h2 {
         padding-left: 10%;
-        padding-bottom: 5%;
+        padding-bottom: 20px;
       }
       p {
         line-height: 3rem;
@@ -54,7 +54,7 @@ html {
       padding-left: 4%;
       h2 {
         padding-left: 10%;
-        padding-bottom: 5%;
+        padding-bottom: 20px;
       }
       p {
         line-height: 3rem;
@@ -87,10 +87,33 @@ html {
   }
   .health {
     border-top: 1px dashed black;
-    padding-top: 40px;
+    padding-top: 80px;
     display: flex;
     .healthSection {
       width: 45%;
+      padding-left: 1%;
+      padding-right: 2%;
+      h2 {
+        padding-left: 10%;
+        padding-bottom: 20px;
+      }
+      p {
+        line-height: 3rem;
+      }
+      button {
+        width: 120px;
+        height: 50px;
+        background-color: @color;
+        border-radius: 20px;
+        border: 1px solid black;
+        font-size: 1.6rem;
+        margin-left: 25%;
+        margin-top: 30px;
+        &:hover {
+          background-color: black;
+          color: @color;
+      }
+      }
     }
     img {
       width: 53%;
