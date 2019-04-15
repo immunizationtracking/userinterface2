@@ -1,0 +1,30 @@
+header{
+  display: flex;
+  background-color: @color;
+  border-bottom: 2px solid black;
+  h1 {
+    width: 35%;
+    padding-left: 2%;
+    padding-top: 30px;
+  }
+  nav{
+    border: 1px solid red;
+    padding-top: 80px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    a {
+      text-decoration: none;
+      font-size: 1.6rem;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+  button {
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+
+  }
+}
