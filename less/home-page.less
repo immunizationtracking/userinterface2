@@ -10,17 +10,76 @@ html {
     display: flex;
     padding-top: 220px;
     padding-left: 1%;
-    border: 1px solid red;
+    padding-bottom: 80px;
     .aboutSection {
-      width: 49%;
-      border: 1px solid red;
+      width: 45%;
+      padding-top: 40px;
+      h2 {
+        padding-left: 10%;
+        padding-bottom: 5%;
+      }
+      p {
+        line-height: 3rem;
+        padding-bottom: 40px;
+
+      }
+      button {
+        width: 120px;
+        height: 50px;
+        background-color: @color;
+        border-radius: 20px;
+        border: 1px solid black;
+        font-size: 1.6rem;
+        margin-left: 30%;
+        &:hover {
+          background-color: black;
+          color: @color;
+        }
+      }
     }
     img {
-      width: 49%;
+      width: 53%;
       height: 400px;
+      border-radius: 20px;
     }
   }
   .personal{
-    
+    border-top: 1px dashed black;
+    padding-top: 140px;
+    display: flex;
+    .personalSection {
+      width: 49%;
+      padding-left: 4%;
+      h2 {
+        padding-left: 10%;
+        padding-bottom: 5%;
+      }
+      p {
+        line-height: 3rem;
+      }
+    }
+    img {
+      width: 45%;
+      order: -1;
+      height: 400px;
+
+      border-radius: 30px;
+    }
+    button {
+      width: 120px;
+      height: 50px;
+      background-color: @color;
+      border-radius: 20px;
+      border: 1px solid black;
+      font-size: 1.6rem;
+      margin-left: 30%;
+      margin-top: 20px;
+      &:hover {
+        background-color: black;
+        color: @color;
+    }
+
+    }
+
   }
 }
