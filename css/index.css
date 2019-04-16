@@ -250,6 +250,7 @@ header button:hover {
     width: 80%;
     height: 70px;
     background-color: #22bcb9;
+    font-size: 3rem;
   }
 }
 footer {
@@ -312,6 +313,7 @@ html {
   .container .about {
     flex-direction: column;
     padding-top: 30px;
+    padding-left: 2%;
   }
 }
 .container .about .aboutSection {
@@ -366,6 +368,8 @@ html {
     width: 80%;
     height: 70px;
     background-color: #22bcb9;
+    font-size: 3rem;
+    margin-bottom: 40px;
   }
 }
 .container .about img {
@@ -386,16 +390,37 @@ html {
   display: flex;
   padding-bottom: 80px;
 }
+@media (max-width: 500px) {
+  .container .personal {
+    flex-direction: column;
+  }
+}
 .container .personal .personalSection {
   width: 49%;
   padding-left: 4%;
+}
+@media (max-width: 500px) {
+  .container .personal .personalSection {
+    width: 98%;
+  }
 }
 .container .personal .personalSection h2 {
   padding-left: 10%;
   padding-bottom: 20px;
 }
+@media (max-width: 500px) {
+  .container .personal .personalSection h2 {
+    margin-left: 10%;
+  }
+}
 .container .personal .personalSection p {
   line-height: 3rem;
+}
+@media (max-width: 500px) {
+  .container .personal .personalSection p {
+    line-height: 4rem;
+    font-size: 2.6rem;
+  }
 }
 .container .personal img {
   width: 43%;
@@ -404,6 +429,12 @@ html {
   margin-left: 2%;
   border-radius: 30px;
   border: 1px solid black;
+}
+@media (max-width: 500px) {
+  .container .personal img {
+    width: 98%;
+    order: 1;
+  }
 }
 .container .personal button {
   width: 120px;
@@ -426,6 +457,9 @@ html {
     width: 80%;
     height: 70px;
     background-color: #22bcb9;
+    font-size: 3rem;
+    margin-top: 30px;
+    margin-bottom: 40px;
   }
 }
 .container .health {
@@ -433,17 +467,39 @@ html {
   padding-top: 80px;
   display: flex;
 }
+@media (max-width: 500px) {
+  .container .health {
+    flex-direction: column;
+  }
+}
 .container .health .healthSection {
   width: 45%;
   padding-left: 1%;
   padding-right: 2%;
 }
+@media (max-width: 500px) {
+  .container .health .healthSection {
+    width: 98%;
+  }
+}
 .container .health .healthSection h2 {
   padding-left: 10%;
   padding-bottom: 20px;
 }
+@media (max-width: 500px) {
+  .container .health .healthSection h2 {
+    padding-left: 20%;
+  }
+}
 .container .health .healthSection p {
   line-height: 3rem;
+}
+@media (max-width: 500px) {
+  .container .health .healthSection p {
+    line-height: 4rem;
+    font-size: 2.6rem;
+    padding-left: 2%;
+  }
 }
 .container .health .healthSection button {
   width: 120px;
@@ -466,6 +522,9 @@ html {
     width: 80%;
     height: 70px;
     background-color: #22bcb9;
+    font-size: 3rem;
+    margin-top: 30px;
+    margin-bottom: 40px;
   }
 }
 .container .health img {
@@ -473,6 +532,12 @@ html {
   height: 400px;
   border-radius: 30px;
   border: 1px solid black;
+}
+@media (max-width: 500px) {
+  .container .health img {
+    width: 97%;
+    margin-left: 2%;
+  }
 }
 .container .box {
   margin-top: 70px;

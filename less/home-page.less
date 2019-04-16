@@ -29,6 +29,7 @@ html {
     @media @mobile {
       flex-direction: column;
       padding-top: 30px;
+      padding-left: 2%;
     }
     .aboutSection {
       width: 45%;
@@ -70,7 +71,7 @@ html {
         }
         @media @mobile {
           .button-mobile();
-        
+          margin-bottom: 40px;
         }
       }
     }
@@ -91,15 +92,28 @@ html {
     padding-top: 100px;
     display: flex;
     padding-bottom: 80px;
+    @media @mobile {
+      flex-direction: column;
+    }
     .personalSection {
       width: 49%;
       padding-left: 4%;
+      @media @mobile {
+        width: 98%;
+      }
       h2 {
         padding-left: 10%;
         padding-bottom: 20px;
+        @media @mobile {
+          margin-left: 10%;
+        }
       }
       p {
         line-height: 3rem;
+        @media @mobile {
+          line-height: 4rem;
+          font-size: 2.6rem;
+        }
       }
     }
     img {
@@ -109,6 +123,10 @@ html {
       margin-left: 2%;
       border-radius: 30px;
       border: 1px solid black;
+      @media @mobile {
+        width: 98%;
+        order:1;
+      }
     }
     button {
       width: 120px;
@@ -125,6 +143,8 @@ html {
     }
     @media @mobile {
       .button-mobile();
+      margin-top: 30px;
+      margin-bottom: 40px;
     }
 
     }
@@ -134,16 +154,31 @@ html {
     border-top: 1px dashed black;
     padding-top: 80px;
     display: flex;
+    @media @mobile {
+      flex-direction: column;
+    }
     .healthSection {
       width: 45%;
       padding-left: 1%;
       padding-right: 2%;
+      @media @mobile {
+        width: 98%;
+
+      }
       h2 {
         padding-left: 10%;
         padding-bottom: 20px;
+        @media @mobile {
+          padding-left: 20%;
+        }
       }
       p {
         line-height: 3rem;
+        @media @mobile {
+          line-height: 4rem;
+          font-size: 2.6rem;
+          padding-left: 2%;
+        }
       }
       button {
         width: 120px;
@@ -160,6 +195,8 @@ html {
       }
       @media @mobile {
         .button-mobile();
+        margin-top: 30px;
+        margin-bottom: 40px;
       }
       }
     }
@@ -168,6 +205,10 @@ html {
       height: 400px;
       border-radius: 30px;
       border: 1px solid black;
+      @media @mobile {
+        width: 97%;
+        margin-left: 2%;
+      }
     }
   }
   .box {
