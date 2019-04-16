@@ -196,14 +196,11 @@ header button {
   margin-top: 30px;
   margin-left: 1%;
   font-size: 1.6rem;
-  color: white;
-  background: black;
+  background: #22bcb9;
 }
 header button:hover {
-  transform: scale(1.1);
-  text-decoration: underline;
   color: #22bcb9;
-  background-color: white;
+  background-color: black;
 }
 footer {
   background-color: #22bcb9;
@@ -357,14 +354,14 @@ html {
   border: 1px solid black;
   padding: 40px;
   width: 33%;
-  padding-left: 10%;
+  padding-left: 5%;
   background-color: #22bcb9;
 }
 .container .box .menu .middle {
   border: 1px solid black;
   padding: 40px;
   width: 33%;
-  padding-left: 10%;
+  padding-left: 7%;
   background-color: #22bcb9;
 }
 .container .box .menu .right {
