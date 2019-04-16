@@ -210,12 +210,22 @@ header button:hover {
   background-color: black;
 }
 footer {
+  display: flex;
+  background-image: -webkit-linear-gradient(white, #22bcb9);
+  background-image: -o-linear-gradient(white, #22bcb9);
   background-image: linear-gradient(white, #22bcb9);
   height: 140px;
-  padding-top: 60px;
-  padding-left: 38%;
-  margin-top: 70px;
+  padding-top: 20px;
+  margin-top: 50px;
   border-top: 2px solid black;
+}
+footer img {
+  height: 100px;
+  padding-left: 10%;
+}
+footer p {
+  padding-left: 20%;
+  padding-top: 50px;
 }
 html {
   max-width: 1200px;
