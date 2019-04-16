@@ -7,7 +7,7 @@ class Menu {
     this.data = this.attrs.dataset.tab;
     this.attrs.addEventListener('mouseover', () => this.changeColor()); //to change color on mouseover
     this.attrs.addEventListener('mouseleave', () => this.changeBack()); //to remove color on mouseleave
-    this.attrs.addEventListener('click', () => new Card(this.data));  //to change photos.
+    this.attrs.addEventListener('click', () => this.changePhotos());
   }
   changeColor() {
     this.attrs.classList.remove('oneItem');
@@ -19,19 +19,12 @@ class Menu {
     this.attrs.classList.add('oneItem');
 
   }
-
-}
-
-class Card {
-  constructor(element) {
-    this.element = element;
-    console.log(this.element + ' here')
+  changePhotos() {
     document.querySelectorAll('.schedule').forEach(item => item.classList.add('hidden'));
-    document.querySelectorAll(`[data-tab="${this.element}"]`).forEach(item => item.classList.remove('hidden'));
-    console.log(`data-tab="${this.element}"`)
+    document.querySelectorAll(`[data-tab="${this.data}"]`).forEach(item => item.classList.remove('hidden'));
   }
-}
 
+}
 
 
 let items = document.querySelectorAll('.oneItem').forEach(item => new Menu(item));
