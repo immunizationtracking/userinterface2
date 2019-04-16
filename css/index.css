@@ -159,7 +159,9 @@ p {
 }
 header {
   display: flex;
-  background-color: #22bcb9;
+  background-image: -webkit-linear-gradient(#22bcb9, white);
+  background-image: -o-linear-gradient(#22bcb9, white);
+  background-image: linear-gradient(#22bcb9, white);
   border-bottom: 2px solid black;
   height: 140px;
   position: fixed;
@@ -194,12 +196,12 @@ header nav a:hover {
   text-decoration: underline;
 }
 header button {
-  width: 140px;
+  width: 160px;
   height: 40px;
   border-radius: 15px;
   border: 2px solid black;
   margin-top: 30px;
-  margin-left: 1%;
+  margin-right: 2%;
   font-size: 1.6rem;
   background: #22bcb9;
 }
@@ -208,7 +210,7 @@ header button:hover {
   background-color: black;
 }
 footer {
-  background-color: #22bcb9;
+  background-image: linear-gradient(white, #22bcb9);
   height: 140px;
   padding-top: 60px;
   padding-left: 38%;
@@ -355,24 +357,20 @@ html {
   display: flex;
   justify-content: space-around;
 }
-.container .box .menu .left {
-  border: 1px solid black;
+.container .box .menu .oneItem {
+  border-bottom: 1px solid black;
   padding: 40px;
-  width: 33%;
+  width: 33.3%;
+  padding-left: 5%;
+  background-image: linear-gradient(#22bcb9, white);
+}
+.container .box .menu .oneItemColorChange {
+  border-bottom: 1px solid black;
+  padding: 40px;
+  width: 33.3%;
   padding-left: 5%;
   background-color: #22bcb9;
 }
-.container .box .menu .middle {
-  border: 1px solid black;
-  padding: 40px;
-  width: 33%;
-  padding-left: 7%;
-  background-color: #22bcb9;
-}
-.container .box .menu .right {
-  border: 1px solid black;
-  padding: 40px;
-  width: 34%;
-  padding-left: 10%;
-  background-color: #22bcb9;
+.container .box .hidden {
+  display: none;
 }

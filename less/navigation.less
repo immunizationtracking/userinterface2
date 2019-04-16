@@ -1,6 +1,8 @@
 header{
   display: flex;
-  background-color: @color;
+background-image: -webkit-linear-gradient(@color, white);
+background-image: -o-linear-gradient(@color, white);
+background-image: linear-gradient(@color, white);
   border-bottom: 2px solid black;
   height: 140px;
   position: fixed;
@@ -34,12 +36,12 @@ header{
     }
   }
   button {
-    width: 140px;
+    width: 160px;
     height: 40px;
     border-radius: 15px;
     border: 2px solid black;
     margin-top: 30px;
-    margin-left: 1%;
+    margin-right: 2%;
     font-size: 1.6rem;
     background: @color;
     &:hover {

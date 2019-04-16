@@ -137,35 +137,30 @@ html {
     border: 1px solid black;
     height: 500px;
     width: 98%;
-
     margin-left: 1%;
     margin-right: 1%;
 
     .menu {
       display: flex;
       justify-content: space-around;
-      .left {
-        border: 1px solid black;
+      .oneItem {
+        border-bottom: 1px solid black;
         padding: 40px;
-        width: 33%;
+        width: 33.3%;
+        padding-left: 5%;
+        background-image: linear-gradient(@color, white);
+      }
+      .oneItemColorChange{
+        border-bottom: 1px solid black;
+        padding: 40px;
+        width: 33.3%;
         padding-left: 5%;
         background-color: @color;
+      }
 
-      }
-      .middle {
-        border: 1px solid black;
-        padding: 40px;
-        width: 33%;
-        padding-left: 7%;
-        background-color: @color;
-      }
-      .right {
-        border: 1px solid black;
-        padding: 40px;
-        width: 34%;
-        padding-left: 10%;
-        background-color: @color;
-      }
+    }
+    .hidden {
+      display: none;
     }
   }
 }
