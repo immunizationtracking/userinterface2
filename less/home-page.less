@@ -14,23 +14,46 @@ html {
   .imageWording {
     margin-left: 25%;
     margin-top: -50px;
+    @media @mobile {
+      font-size: 2rem;
+      margin-left: 5%;
+      margin-top: 0;
+    }
   }
   .about{
     display: flex;
     padding-top: 220px;
     padding-left: 1%;
     padding-bottom: 80px;
+
+    @media @mobile {
+      flex-direction: column;
+      padding-top: 30px;
+    }
     .aboutSection {
       width: 45%;
       padding-top: 40px;
       padding-right: 4%;
+      @media @mobile {
+        width: 98%;
+        padding-top: 30px;
+        padding-left: 1%;
+        padding-right: 1%;
+      }
       h2 {
         padding-left: 10%;
         padding-bottom: 20px;
+        @media @mobile {
+          padding-left: 40%;
+        }
       }
       p {
         line-height: 3rem;
         padding-bottom: 40px;
+        @media @mobile {
+          font-size: 2.6rem;
+          line-height: 4rem;
+        }
 
       }
       button {
@@ -45,6 +68,10 @@ html {
           background-color: black;
           color: @color;
         }
+        @media @mobile {
+          .button-mobile();
+        
+        }
       }
     }
     img {
@@ -52,6 +79,11 @@ html {
       height: 400px;
       border-radius: 20px;
       border: 1px solid black;
+      @media @mobile {
+        width: 98%;
+        padding-left: 1%;
+
+      }
     }
   }
   .personal{
@@ -91,6 +123,9 @@ html {
         background-color: black;
         color: @color;
     }
+    @media @mobile {
+      .button-mobile();
+    }
 
     }
 
@@ -122,6 +157,9 @@ html {
         &:hover {
           background-color: black;
           color: @color;
+      }
+      @media @mobile {
+        .button-mobile();
       }
       }
     }

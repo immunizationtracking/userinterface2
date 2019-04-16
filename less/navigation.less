@@ -9,15 +9,26 @@ background-image: linear-gradient(@color, white);
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  @media @mobile {
+    flex-direction: column;
+    position: static;
+    height: 100%;
+  }
   h1 {
     width: 25%;
     padding-left: 2%;
     padding-top: 20px;
+    @media @mobile {
+      display: none;
+    }
   }
   img {
     height: 50%;
     padding-left: 15px;
     padding-top: 10px;
+    @media @mobile {
+      display: none;
+    }
   }
   nav{
     padding-top: 110px;
@@ -25,6 +36,13 @@ background-image: linear-gradient(@color, white);
     display: flex;
     justify-content: space-between;
     padding-left: 5%;
+    @media @mobile {
+      flex-direction: column;
+      padding-top: 20px;
+      text-align: center;
+      width: 100%;
+      padding-left: 0;
+    }
     a {
       text-decoration: none;
       font-size: 1.8rem;
@@ -32,6 +50,13 @@ background-image: linear-gradient(@color, white);
       &:hover {
         transform: scale(1.2);
         text-decoration: underline;
+      }
+      @media @mobile {
+        font-size: 3rem;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border-bottom: 1px dashed black;
+
       }
     }
   }
@@ -47,6 +72,9 @@ background-image: linear-gradient(@color, white);
     &:hover {
       color: @color;
       background-color: black;
+    }
+    @media @mobile {
+      .button-mobile();
     }
   }
 }

@@ -169,15 +169,32 @@ header {
   max-width: 1200px;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    position: static;
+    height: 100%;
+  }
+}
 header h1 {
   width: 25%;
   padding-left: 2%;
   padding-top: 20px;
 }
+@media (max-width: 500px) {
+  header h1 {
+    display: none;
+  }
+}
 header img {
   height: 50%;
   padding-left: 15px;
   padding-top: 10px;
+}
+@media (max-width: 500px) {
+  header img {
+    display: none;
+  }
 }
 header nav {
   padding-top: 110px;
@@ -185,6 +202,15 @@ header nav {
   display: flex;
   justify-content: space-between;
   padding-left: 5%;
+}
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+    padding-top: 20px;
+    text-align: center;
+    width: 100%;
+    padding-left: 0;
+  }
 }
 header nav a {
   text-decoration: none;
@@ -194,6 +220,14 @@ header nav a {
 header nav a:hover {
   transform: scale(1.2);
   text-decoration: underline;
+}
+@media (max-width: 500px) {
+  header nav a {
+    font-size: 3rem;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 1px dashed black;
+  }
 }
 header button {
   width: 110px;
@@ -208,6 +242,15 @@ header button {
 header button:hover {
   color: #22bcb9;
   background-color: black;
+}
+@media (max-width: 500px) {
+  header button {
+    margin-left: 10%;
+    margin-bottom: 20px;
+    width: 80%;
+    height: 70px;
+    background-color: #22bcb9;
+  }
 }
 footer {
   display: flex;
@@ -227,6 +270,17 @@ footer p {
   padding-left: 20%;
   padding-top: 50px;
 }
+footer a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding-left: 20%;
+  margin-top: 50px;
+  color: black;
+}
+footer a:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+}
 html {
   max-width: 1200px;
   width: 100%;
@@ -241,24 +295,56 @@ html {
   margin-left: 25%;
   margin-top: -50px;
 }
+@media (max-width: 500px) {
+  .container .imageWording {
+    font-size: 2rem;
+    margin-left: 5%;
+    margin-top: 0;
+  }
+}
 .container .about {
   display: flex;
   padding-top: 220px;
   padding-left: 1%;
   padding-bottom: 80px;
 }
+@media (max-width: 500px) {
+  .container .about {
+    flex-direction: column;
+    padding-top: 30px;
+  }
+}
 .container .about .aboutSection {
   width: 45%;
   padding-top: 40px;
   padding-right: 4%;
 }
+@media (max-width: 500px) {
+  .container .about .aboutSection {
+    width: 98%;
+    padding-top: 30px;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+}
 .container .about .aboutSection h2 {
   padding-left: 10%;
   padding-bottom: 20px;
 }
+@media (max-width: 500px) {
+  .container .about .aboutSection h2 {
+    padding-left: 40%;
+  }
+}
 .container .about .aboutSection p {
   line-height: 3rem;
   padding-bottom: 40px;
+}
+@media (max-width: 500px) {
+  .container .about .aboutSection p {
+    font-size: 2.6rem;
+    line-height: 4rem;
+  }
 }
 .container .about .aboutSection button {
   width: 120px;
@@ -273,11 +359,26 @@ html {
   background-color: black;
   color: #22bcb9;
 }
+@media (max-width: 500px) {
+  .container .about .aboutSection button {
+    margin-left: 10%;
+    margin-bottom: 20px;
+    width: 80%;
+    height: 70px;
+    background-color: #22bcb9;
+  }
+}
 .container .about img {
   width: 53%;
   height: 400px;
   border-radius: 20px;
   border: 1px solid black;
+}
+@media (max-width: 500px) {
+  .container .about img {
+    width: 98%;
+    padding-left: 1%;
+  }
 }
 .container .personal {
   border-top: 1px dashed black;
@@ -318,6 +419,15 @@ html {
   background-color: black;
   color: #22bcb9;
 }
+@media (max-width: 500px) {
+  .container .personal button {
+    margin-left: 10%;
+    margin-bottom: 20px;
+    width: 80%;
+    height: 70px;
+    background-color: #22bcb9;
+  }
+}
 .container .health {
   border-top: 1px dashed black;
   padding-top: 80px;
@@ -348,6 +458,15 @@ html {
 .container .health .healthSection button:hover {
   background-color: black;
   color: #22bcb9;
+}
+@media (max-width: 500px) {
+  .container .health .healthSection button {
+    margin-left: 10%;
+    margin-bottom: 20px;
+    width: 80%;
+    height: 70px;
+    background-color: #22bcb9;
+  }
 }
 .container .health img {
   width: 53%;
