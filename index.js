@@ -4,9 +4,9 @@ class Menu {
   constructor(attrs){
     this.attrs = attrs;
     console.log(this.attrs)
-    this.attrs.addEventListener('mouseover', () => this.changeColor());
-    this.attrs.addEventListener('mouseleave', () => this.changeBack());
-    this.attrs.addEventListener('click', () => new Card(this.attrs));
+    this.attrs.addEventListener('mouseover', () => this.changeColor()); //to change color on mouseover
+    this.attrs.addEventListener('mouseleave', () => this.changeBack()); //to remove color on mouseleave
+    this.attrs.addEventListener('click', () => new Card(this.attrs));  //to change photos.
   }
   changeColor() {
     this.attrs.classList.remove('oneItem');
@@ -16,6 +16,7 @@ class Menu {
   changeBack() {
     this.attrs.classList.remove('oneItemColorChange');
     this.attrs.classList.add('oneItem');
+
   }
 
 }
@@ -24,16 +25,10 @@ class Card {
   constructor(element) {
     this.element = element;
     console.log(this.element)
+    this.pic = document.querySelectorAll('.schedule').forEach(item => item.classList.add('hidden')); //adds hidden to all photos
+
   }
 }
-
-
-
-
-
-
-
-
 
 
 
