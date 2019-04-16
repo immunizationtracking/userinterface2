@@ -3,7 +3,6 @@
 class Menu {
   constructor(attrs){
     this.attrs = attrs;
-    console.log(this.attrs)
     this.data = this.attrs.dataset.tab;
     this.attrs.addEventListener('mouseover', () => this.changeColor()); //to change color on mouseover
     this.attrs.addEventListener('mouseleave', () => this.changeBack()); //to remove color on mouseleave
@@ -28,5 +27,3 @@ class Menu {
 
 
 let items = document.querySelectorAll('.oneItem').forEach(item => new Menu(item));
-
-//let items = document.querySelectorAll('.oneItem').forEach(item => new Menu(item));
