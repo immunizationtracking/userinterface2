@@ -256,7 +256,7 @@ header button {
   border-radius: 15px;
   border: 1px solid black;
   margin-top: 30px;
-  margin-right: 2%;
+  margin-left: 3%;
   font-size: 1.6rem;
   background: #22bcb9;
 }
@@ -281,6 +281,7 @@ header button:hover {
     height: 70px;
     background-color: #22bcb9;
     font-size: 3rem;
+    margin-left: 0;
   }
 }
 footer {
@@ -386,6 +387,7 @@ html {
 @media (max-width: 500px) {
   .container .person {
     flex-direction: column;
+    margin-left: 10%;
   }
 }
 .container .person .boxPerson {
