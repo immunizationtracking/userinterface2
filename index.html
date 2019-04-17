@@ -13,9 +13,9 @@
     <img src="img/smallicon.png" alt="icon">
     <nav>
       <a href="#">Home</a>
-      <a href="about">About</a>
-      <a href="personal">Personal & Family</a>
-      <a href="health">Health Providers</a>
+      <a href="#about1">About</a>
+      <a href="#personal1">Personal & Family</a>
+      <a href="#health1">Health Providers</a>
     </nav>
     <button class="signIn">
         Log In
@@ -25,7 +25,7 @@
   <div class="container">
     <img src="img/martha-dominguez-de-gouveia-572635-unsplash.jpg" alt="Hospital Office">
     <h2 class="imageWording">Vaccination Records at the Click of a Button</h2>
-    <section class="about">
+    <section class="about" id="about1">
       <div class="aboutSection">
         <h2>About</h2>
         <p>
@@ -36,7 +36,7 @@
       </div>
       <img src="img/zach-vessels-1285341-unsplash.jpg" alt="healthcare worker">
     </section>
-    <section class="personal">
+    <section class="personal" id="personal1">
       <div class="personalSection">
           <h2>Personal & Family</h2>
           <p>
@@ -48,7 +48,7 @@
         </div>
       <img src="img/vaccination-1.jpg" alt="Provider giving shot">
     </section>
-    <section class="health">
+    <section class="health" id="health1">
       <div class="healthSection">
         <h2>Health Providers</h2>
         <p>
@@ -64,16 +64,17 @@
         <div class="menu">
           <div class="tabs">
             <p class="oneItem left child" data-tab="1">Children Vaccine Schedule</p>
+            <img src="img/child-schedule.jpg" alt="Child Vaccination Schedule" class="hidden childrenschedule schedule child" data-tab="1">
           </div>
           <div class="tabs">
             <p class="oneItem middle adult" data-tab="2">Adult Vaccine Schedule</p>
+            <img src="img/adult-schedule.jpg" alt="Adult Vaccination Schedule" class="hidden adultschedule schedule adult" data-tab="2">
           </div>
           <div class="tabs">
             <p class="oneItem right some" data-tab="3">Vaccination Catchup Schedule</p>
+            <img src="img/catchup.jpg" alt="" class="hidden schedule someschedule" data-tab="3">
           </div>
-          <img src="img/child-schedule.jpg" alt="Child Vaccination Schedule" class="childrenschedule schedule child" data-tab="1">
-          <img src="img/adult-schedule.jpg" alt="Adult Vaccination Schedule" class="hidden adultschedule schedule adult" data-tab="2">
-          <img src="img/catchup.jpg" alt="" class="hidden schedule someschedule" data-tab="3">
+
         </div>
       </div>
     </section>

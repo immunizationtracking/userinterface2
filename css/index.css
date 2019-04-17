@@ -263,13 +263,33 @@ footer {
   margin-top: 50px;
   border-top: 2px solid black;
 }
+@media (max-width: 500px) {
+  footer {
+    flex-direction: column;
+    height: 100%;
+  }
+}
 footer img {
   height: 100px;
   padding-left: 10%;
 }
+@media (max-width: 500px) {
+  footer img {
+    width: 45%;
+    margin-left: 20%;
+    order: 0;
+  }
+}
 footer p {
   padding-left: 20%;
   padding-top: 50px;
+}
+@media (max-width: 500px) {
+  footer p {
+    order: 2;
+    font-size: 2.6rem;
+    padding-left: 12%;
+  }
 }
 footer a {
   text-decoration: none;
@@ -277,6 +297,15 @@ footer a {
   padding-left: 20%;
   margin-top: 50px;
   color: black;
+}
+@media (max-width: 500px) {
+  footer a {
+    order: 1;
+    font-size: 2.6rem;
+    padding-right: 20%;
+    padding-bottom: 20px;
+    text-align: center;
+  }
 }
 footer a:hover {
   transform: scale(1.1);
@@ -381,7 +410,7 @@ html {
 @media (max-width: 500px) {
   .container .about img {
     width: 98%;
-    padding-left: 1%;
+    margin-left: 1%;
   }
 }
 .container .personal {
@@ -537,15 +566,20 @@ html {
   .container .health img {
     width: 97%;
     margin-left: 2%;
+    padding-left: 0;
   }
 }
 .container .box {
   margin-top: 70px;
   border: 1px solid black;
-  height: 950px;
   width: 98%;
   margin-left: 1%;
   margin-right: 1%;
+}
+@media (max-width: 500px) {
+  .container .box {
+    display: none;
+  }
 }
 .container .box .menu {
   display: flex;
@@ -554,6 +588,7 @@ html {
 .container .box .menu .tabs {
   width: 100%;
   display: flex;
+  flex-direction: column;
 }
 .container .box .menu .oneItem {
   border-bottom: 1px solid black;

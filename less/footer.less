@@ -7,13 +7,27 @@ background-image: linear-gradient(white, @color);
   padding-top: 20px;
   margin-top: 50px;
   border-top: 2px solid black;
+  @media @mobile {
+    flex-direction: column;
+    height: 100%;
+  }
   img {
     height: 100px;
     padding-left: 10%;
+    @media @mobile {
+      width: 45%;
+      margin-left: 20%;
+      order: 0;
+    }
   }
   p {
     padding-left: 20%;
     padding-top: 50px;
+    @media @mobile {
+      order: 2;
+      font-size: 2.6rem;
+      padding-left: 12%;
+    }
   }
   a {
     text-decoration: none;
@@ -21,6 +35,14 @@ background-image: linear-gradient(white, @color);
     padding-left: 20%;
     margin-top: 50px;
     color: black;
+    @media @mobile {
+      order: 1;
+      font-size: 2.6rem;
+      padding-right: 20%;
+      padding-bottom: 20px;
+
+      text-align: center;
+    }
     &:hover {
       transform: scale(1.1);
       text-decoration: underline;
