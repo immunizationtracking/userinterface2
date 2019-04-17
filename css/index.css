@@ -300,8 +300,8 @@ footer {
   }
 }
 footer img {
-  height: 100px;
-  padding-left: 0;
+  height: 60px;
+  padding-left: 5%;
 }
 @media (max-width: 800px) {
   footer img {
