@@ -390,6 +390,13 @@ html {
   margin-left: 25%;
   margin-top: -50px;
 }
+@media (max-width: 800px) {
+  .container .imageWording {
+    margin-left: 8%;
+    font-size: 2.5rem;
+    margin-top: -30px;
+  }
+}
 @media (max-width: 500px) {
   .container .imageWording {
     font-size: 2rem;
@@ -501,6 +508,7 @@ html {
 .container .personal .personalSection h2 {
   padding-left: 10%;
   padding-bottom: 20px;
+  padding-top: 30px;
 }
 @media (max-width: 500px) {
   .container .personal .personalSection h2 {
@@ -517,10 +525,10 @@ html {
   }
 }
 .container .personal img {
-  width: 43%;
+  width: 49%;
   order: -1;
   height: 400px;
-  margin-left: 2%;
+  margin-left: 1%;
   border-radius: 30px;
   border: 1px solid black;
 }
@@ -577,6 +585,7 @@ html {
   }
 }
 .container .health .healthSection h2 {
+  padding-top: 30px;
   padding-left: 10%;
   padding-bottom: 20px;
 }
