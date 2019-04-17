@@ -9,6 +9,14 @@ background-image: linear-gradient(@color, white);
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  .largeicon {
+    display: none;
+    @media @mobile {
+      display: block;
+      width: 50%;
+      margin-left: 24%;
+    }
+  }
   @media @mobile {
     flex-direction: column;
     position: static;

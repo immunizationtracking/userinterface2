@@ -169,6 +169,16 @@ header {
   max-width: 1200px;
   margin: 0 auto;
 }
+header .largeicon {
+  display: none;
+}
+@media (max-width: 500px) {
+  header .largeicon {
+    display: block;
+    width: 50%;
+    margin-left: 24%;
+  }
+}
 @media (max-width: 500px) {
   header {
     flex-direction: column;
@@ -275,9 +285,7 @@ footer img {
 }
 @media (max-width: 500px) {
   footer img {
-    width: 45%;
-    margin-left: 20%;
-    order: 0;
+    display: none;
   }
 }
 footer p {
