@@ -14,6 +14,9 @@ background-image: linear-gradient(white, @color);
   img {
     height: 100px;
     padding-left: 10%;
+    @media @tablet {
+      display: none;
+    }
     @media @mobile {
       display: none;
     }
@@ -21,6 +24,10 @@ background-image: linear-gradient(white, @color);
   p {
     padding-left: 20%;
     padding-top: 50px;
+    @media @tablet {
+      font-size: 2.3rem;
+      padding-left: 10%;
+    }
     @media @mobile {
       order: 2;
       font-size: 2.6rem;
@@ -33,6 +40,9 @@ background-image: linear-gradient(white, @color);
     padding-left: 20%;
     margin-top: 50px;
     color: black;
+    @media @tablet {
+      font-size: 2.3rem;
+    }
     @media @mobile {
       order: 1;
       font-size: 2.6rem;
