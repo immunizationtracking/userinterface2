@@ -168,6 +168,7 @@ header {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  top: 0;
 }
 @media (max-width: 800px) {
   header {
@@ -397,6 +398,30 @@ html {
   width: 100%;
   margin: 0 auto;
   font-family: "Times New Roman", Times, serif;
+}
+.container .person {
+  padding-top: 200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .container .person {
+    flex-direction: column;
+  }
+}
+.container .person .boxPerson {
+  width: 48%;
+  margin-top: 30px;
+  margin-left: 1%;
+  margin-right: 1%;
+  height: 400px;
+  border: 1px solid red;
+}
+@media (max-width: 500px) {
+  .container .person .boxPerson {
+    width: 98%;
+    margin-top: 15px;
+  }
 }
 .container img {
   width: 100%;
