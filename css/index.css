@@ -410,6 +410,12 @@ html {
   padding-left: 1%;
   padding-bottom: 80px;
 }
+@media (max-width: 800px) {
+  .container .about {
+    padding-top: 80px;
+    padding-left: 1%;
+  }
+}
 @media (max-width: 500px) {
   .container .about {
     flex-direction: column;
@@ -421,6 +427,11 @@ html {
   width: 45%;
   padding-top: 40px;
   padding-right: 4%;
+}
+@media (max-width: 800px) {
+  .container .about .aboutSection {
+    padding-top: 15px;
+  }
 }
 @media (max-width: 500px) {
   .container .about .aboutSection {
@@ -443,6 +454,11 @@ html {
   line-height: 3rem;
   padding-bottom: 40px;
 }
+@media (max-width: 800px) {
+  .container .about .aboutSection p {
+    font-size: 2.3rem;
+  }
+}
 @media (max-width: 500px) {
   .container .about .aboutSection p {
     font-size: 2.6rem;
@@ -462,6 +478,13 @@ html {
   background-color: black;
   color: #22bcb9;
 }
+@media (max-width: 800px) {
+  .container .about .aboutSection button {
+    width: 200px;
+    margin-left: 10%;
+    font-size: 2.6rem;
+  }
+}
 @media (max-width: 500px) {
   .container .about .aboutSection button {
     margin-left: 10%;
@@ -479,6 +502,11 @@ html {
   border-radius: 20px;
   border: 1px solid black;
 }
+@media (max-width: 800px) {
+  .container .about img {
+    width: 57%;
+  }
+}
 @media (max-width: 500px) {
   .container .about img {
     width: 98%;
@@ -491,6 +519,11 @@ html {
   display: flex;
   padding-bottom: 80px;
 }
+@media (max-width: 800px) {
+  .container .personal {
+    padding-top: 80px;
+  }
+}
 @media (max-width: 500px) {
   .container .personal {
     flex-direction: column;
@@ -499,6 +532,12 @@ html {
 .container .personal .personalSection {
   width: 49%;
   padding-left: 4%;
+}
+@media (max-width: 800px) {
+  .container .personal .personalSection {
+    width: 43%;
+    padding-left: 2%;
+  }
 }
 @media (max-width: 500px) {
   .container .personal .personalSection {
@@ -510,6 +549,12 @@ html {
   padding-bottom: 20px;
   padding-top: 30px;
 }
+@media (max-width: 800px) {
+  .container .personal .personalSection h2 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+}
 @media (max-width: 500px) {
   .container .personal .personalSection h2 {
     margin-left: 10%;
@@ -517,6 +562,11 @@ html {
 }
 .container .personal .personalSection p {
   line-height: 3rem;
+}
+@media (max-width: 800px) {
+  .container .personal .personalSection p {
+    font-size: 2.3rem;
+  }
 }
 @media (max-width: 500px) {
   .container .personal .personalSection p {
@@ -531,6 +581,12 @@ html {
   margin-left: 1%;
   border-radius: 30px;
   border: 1px solid black;
+}
+@media (max-width: 800px) {
+  .container .personal img {
+    width: 56%;
+    margin-top: 40px;
+  }
 }
 @media (max-width: 500px) {
   .container .personal img {
@@ -552,6 +608,13 @@ html {
   background-color: black;
   color: #22bcb9;
 }
+@media (max-width: 800px) {
+  .container .personal button {
+    width: 200px;
+    margin-left: 10%;
+    font-size: 2.6rem;
+  }
+}
 @media (max-width: 500px) {
   .container .personal button {
     margin-left: 10%;
@@ -569,6 +632,11 @@ html {
   padding-top: 80px;
   display: flex;
 }
+@media (max-width: 800px) {
+  .container .health {
+    padding-top: 60px;
+  }
+}
 @media (max-width: 500px) {
   .container .health {
     flex-direction: column;
@@ -585,9 +653,14 @@ html {
   }
 }
 .container .health .healthSection h2 {
-  padding-top: 30px;
+  padding-top: 50px;
   padding-left: 10%;
   padding-bottom: 20px;
+}
+@media (max-width: 800px) {
+  .container .health .healthSection h2 {
+    padding-top: 20px;
+  }
 }
 @media (max-width: 500px) {
   .container .health .healthSection h2 {
@@ -596,6 +669,11 @@ html {
 }
 .container .health .healthSection p {
   line-height: 3rem;
+}
+@media (max-width: 800px) {
+  .container .health .healthSection p {
+    font-size: 2.3rem;
+  }
 }
 @media (max-width: 500px) {
   .container .health .healthSection p {
@@ -617,6 +695,12 @@ html {
 .container .health .healthSection button:hover {
   background-color: black;
   color: #22bcb9;
+}
+@media (max-width: 800px) {
+  .container .health .healthSection button {
+    width: 200px;
+    font-size: 2.6rem;
+  }
 }
 @media (max-width: 500px) {
   .container .health .healthSection button {
