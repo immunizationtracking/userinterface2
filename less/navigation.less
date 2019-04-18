@@ -9,25 +9,27 @@ background-image: linear-gradient(@color, white);
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  top: 0;
+  @media @tablet {
+    flex-direction: column;
+    position: static;
+    height: 100%;
+  }
+
   @media @mobile {
     flex-direction: column;
     position: static;
     height: 100%;
   }
-  h1 {
-    width: 25%;
-    padding-left: 2%;
-    padding-top: 20px;
-    @media @mobile {
-      display: none;
-    }
-  }
   img {
-    height: 50%;
-    padding-left: 15px;
-    padding-top: 10px;
-    @media @mobile {
-      display: none;
+    height: 60px;
+    padding-left: 0;
+    padding-top: 0;
+    margin-left: 1%;
+    margin-top: 10px;
+    @media @tablet {
+      height: 60px;
+      align-self: center;
     }
   }
   nav{
@@ -36,13 +38,22 @@ background-image: linear-gradient(@color, white);
     display: flex;
     justify-content: space-between;
     padding-left: 5%;
+    @media @tablet {
+      width: 100%;
+      padding-left: 1%;
+      padding-right: 1%;
+      padding-top: 40px;
+      padding-bottom: 20px;
+    }
     @media @mobile {
       flex-direction: column;
       padding-top: 20px;
       text-align: center;
       width: 100%;
       padding-left: 0;
+      margin-left: 0;
     }
+
     a {
       text-decoration: none;
       font-size: 1.8rem;
@@ -50,14 +61,21 @@ background-image: linear-gradient(@color, white);
       &:hover {
         transform: scale(1.2);
         text-decoration: underline;
+        @media @tablet {
+          transform: scale(1.05);
+        }
+      }
+      @media @tablet {
+        font-size: 2.3rem;
       }
       @media @mobile {
         font-size: 3rem;
         padding-bottom: 20px;
         padding-top: 20px;
         border-bottom: 1px dashed black;
-
       }
+
+
     }
   }
   button {
@@ -66,15 +84,24 @@ background-image: linear-gradient(@color, white);
     border-radius: 15px;
     border: 1px solid black;
     margin-top: 30px;
-    margin-right: 2%;
+
+    margin-left: 3%;
     font-size: 1.6rem;
     background: @color;
     &:hover {
       color: @color;
       background-color: black;
     }
+    @media @tablet {
+      align-self: center;
+      width: 70%;
+      height: 60px;
+      font-size: 2.4rem;
+      margin-bottom: 40px;
+    }
     @media @mobile {
       .button-mobile();
+      margin-left: 0;
     }
   }
 }

@@ -168,6 +168,14 @@ header {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  top: 0;
+}
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+    position: static;
+    height: 100%;
+  }
 }
 @media (max-width: 500px) {
   header {
@@ -176,24 +184,17 @@ header {
     height: 100%;
   }
 }
-header h1 {
-  width: 25%;
-  padding-left: 2%;
-  padding-top: 20px;
-}
-@media (max-width: 500px) {
-  header h1 {
-    display: none;
-  }
-}
 header img {
-  height: 50%;
-  padding-left: 15px;
-  padding-top: 10px;
+  height: 60px;
+  padding-left: 0;
+  padding-top: 0;
+  margin-left: 1%;
+  margin-top: 10px;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   header img {
-    display: none;
+    height: 60px;
+    align-self: center;
   }
 }
 header nav {
@@ -203,6 +204,15 @@ header nav {
   justify-content: space-between;
   padding-left: 5%;
 }
+@media (max-width: 800px) {
+  header nav {
+    width: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+}
 @media (max-width: 500px) {
   header nav {
     flex-direction: column;
@@ -210,6 +220,7 @@ header nav {
     text-align: center;
     width: 100%;
     padding-left: 0;
+    margin-left: 0;
   }
 }
 header nav a {
@@ -220,6 +231,16 @@ header nav a {
 header nav a:hover {
   transform: scale(1.2);
   text-decoration: underline;
+}
+@media (max-width: 800px) {
+  header nav a:hover {
+    transform: scale(1.05);
+  }
+}
+@media (max-width: 800px) {
+  header nav a {
+    font-size: 2.3rem;
+  }
 }
 @media (max-width: 500px) {
   header nav a {
@@ -235,13 +256,22 @@ header button {
   border-radius: 15px;
   border: 1px solid black;
   margin-top: 30px;
-  margin-right: 2%;
+  margin-left: 3%;
   font-size: 1.6rem;
   background: #22bcb9;
 }
 header button:hover {
   color: #22bcb9;
   background-color: black;
+}
+@media (max-width: 800px) {
+  header button {
+    align-self: center;
+    width: 70%;
+    height: 60px;
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+  }
 }
 @media (max-width: 500px) {
   header button {
@@ -251,6 +281,7 @@ header button:hover {
     height: 70px;
     background-color: #22bcb9;
     font-size: 3rem;
+    margin-left: 0;
   }
 }
 footer {
@@ -263,13 +294,42 @@ footer {
   margin-top: 50px;
   border-top: 2px solid black;
 }
+@media (max-width: 500px) {
+  footer {
+    flex-direction: column;
+    height: 100%;
+  }
+}
 footer img {
-  height: 100px;
-  padding-left: 10%;
+  height: 60px;
+  padding-left: 5%;
+}
+@media (max-width: 800px) {
+  footer img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  footer img {
+    display: none;
+  }
 }
 footer p {
-  padding-left: 20%;
+  padding-left: 10%;
   padding-top: 50px;
+}
+@media (max-width: 800px) {
+  footer p {
+    font-size: 2.3rem;
+    padding-left: 10%;
+  }
+}
+@media (max-width: 500px) {
+  footer p {
+    order: 2;
+    font-size: 2.6rem;
+    padding-left: 12%;
+  }
 }
 footer a {
   text-decoration: none;
@@ -277,6 +337,20 @@ footer a {
   padding-left: 20%;
   margin-top: 50px;
   color: black;
+}
+@media (max-width: 800px) {
+  footer a {
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 500px) {
+  footer a {
+    order: 1;
+    font-size: 2.6rem;
+    padding-right: 20%;
+    padding-bottom: 20px;
+    text-align: center;
+  }
 }
 footer a:hover {
   transform: scale(1.1);
@@ -288,6 +362,108 @@ html {
   margin: 0 auto;
   font-family: "Times New Roman", Times, serif;
 }
+.container .person {
+  padding-top: 200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 800px) {
+  .container .person {
+    padding-top: 100px;
+  }
+}
+.container .person img {
+  width: 200px;
+  height: auto;
+  margin-left: 15%;
+}
+@media (max-width: 500px) {
+  .container .person img {
+    margin-left: 10%;
+  }
+}
+.container .person h2 {
+  margin-left: 15%;
+  padding-top: 10px;
+}
+@media (max-width: 500px) {
+  .container .person h2 {
+    margin-left: 10%;
+  }
+}
+.container .person h4 {
+  margin-left: 15%;
+}
+@media (max-width: 500px) {
+  .container .person h4 {
+    margin-left: 10%;
+  }
+}
+@media (max-width: 800px) {
+  .container .person {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .container .person {
+    flex-direction: column;
+    margin-left: 10%;
+  }
+}
+.container .person .boxPerson {
+  width: 31%;
+  margin-top: 60px;
+  margin-left: 1%;
+  margin-right: 1%;
+  height: 450px;
+}
+@media (max-width: 800px) {
+  .container .person .boxPerson {
+    margin-bottom: 40px;
+    width: 98%;
+  }
+}
+.container .person .boxPerson img {
+  height: 270px;
+  width: auto;
+}
+.container .person .boxPerson .github {
+  height: 40px;
+  margin-bottom: 7px;
+}
+.container .person .boxPerson .linkedin {
+  height: 30px;
+  margin-left: 60px;
+  margin-bottom: 10px;
+}
+.container .person .boxPerson .twitter {
+  height: 50px;
+  margin-left: 50px;
+}
+@media (max-width: 1000px) {
+  .container .person .boxPerson {
+    width: 46%;
+  }
+}
+@media (max-width: 800px) {
+  .container .person .boxPerson {
+    width: 96%;
+    padding-left: 20%;
+  }
+}
+@media (max-width: 700px) {
+  .container .person .boxPerson {
+    width: 98%;
+  }
+}
+@media (max-width: 500px) {
+  .container .person .boxPerson {
+    width: 98%;
+    margin-top: 15px;
+    margin-left: 1%;
+    padding-left: 0;
+  }
+}
 .container img {
   width: 100%;
   height: 100%;
@@ -295,6 +471,13 @@ html {
 .container .imageWording {
   margin-left: 25%;
   margin-top: -50px;
+}
+@media (max-width: 800px) {
+  .container .imageWording {
+    margin-left: 8%;
+    font-size: 2.5rem;
+    margin-top: -30px;
+  }
 }
 @media (max-width: 500px) {
   .container .imageWording {
@@ -309,6 +492,12 @@ html {
   padding-left: 1%;
   padding-bottom: 80px;
 }
+@media (max-width: 800px) {
+  .container .about {
+    padding-top: 80px;
+    padding-left: 1%;
+  }
+}
 @media (max-width: 500px) {
   .container .about {
     flex-direction: column;
@@ -320,6 +509,11 @@ html {
   width: 45%;
   padding-top: 40px;
   padding-right: 4%;
+}
+@media (max-width: 800px) {
+  .container .about .aboutSection {
+    padding-top: 15px;
+  }
 }
 @media (max-width: 500px) {
   .container .about .aboutSection {
@@ -342,6 +536,11 @@ html {
   line-height: 3rem;
   padding-bottom: 40px;
 }
+@media (max-width: 800px) {
+  .container .about .aboutSection p {
+    font-size: 2.1rem;
+  }
+}
 @media (max-width: 500px) {
   .container .about .aboutSection p {
     font-size: 2.6rem;
@@ -361,6 +560,13 @@ html {
   background-color: black;
   color: #22bcb9;
 }
+@media (max-width: 800px) {
+  .container .about .aboutSection button {
+    width: 200px;
+    margin-left: 10%;
+    font-size: 2.6rem;
+  }
+}
 @media (max-width: 500px) {
   .container .about .aboutSection button {
     margin-left: 10%;
@@ -378,10 +584,15 @@ html {
   border-radius: 20px;
   border: 1px solid black;
 }
+@media (max-width: 800px) {
+  .container .about img {
+    width: 57%;
+  }
+}
 @media (max-width: 500px) {
   .container .about img {
     width: 98%;
-    padding-left: 1%;
+    margin-left: 1%;
   }
 }
 .container .personal {
@@ -389,6 +600,11 @@ html {
   padding-top: 100px;
   display: flex;
   padding-bottom: 80px;
+}
+@media (max-width: 800px) {
+  .container .personal {
+    padding-top: 80px;
+  }
 }
 @media (max-width: 500px) {
   .container .personal {
@@ -399,6 +615,12 @@ html {
   width: 49%;
   padding-left: 4%;
 }
+@media (max-width: 800px) {
+  .container .personal .personalSection {
+    width: 43%;
+    padding-left: 2%;
+  }
+}
 @media (max-width: 500px) {
   .container .personal .personalSection {
     width: 98%;
@@ -407,6 +629,13 @@ html {
 .container .personal .personalSection h2 {
   padding-left: 10%;
   padding-bottom: 20px;
+  padding-top: 30px;
+}
+@media (max-width: 800px) {
+  .container .personal .personalSection h2 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
 }
 @media (max-width: 500px) {
   .container .personal .personalSection h2 {
@@ -416,6 +645,11 @@ html {
 .container .personal .personalSection p {
   line-height: 3rem;
 }
+@media (max-width: 800px) {
+  .container .personal .personalSection p {
+    font-size: 2.1rem;
+  }
+}
 @media (max-width: 500px) {
   .container .personal .personalSection p {
     line-height: 4rem;
@@ -423,12 +657,18 @@ html {
   }
 }
 .container .personal img {
-  width: 43%;
+  width: 49%;
   order: -1;
   height: 400px;
-  margin-left: 2%;
+  margin-left: 1%;
   border-radius: 30px;
   border: 1px solid black;
+}
+@media (max-width: 800px) {
+  .container .personal img {
+    width: 56%;
+    margin-top: 40px;
+  }
 }
 @media (max-width: 500px) {
   .container .personal img {
@@ -450,6 +690,13 @@ html {
   background-color: black;
   color: #22bcb9;
 }
+@media (max-width: 800px) {
+  .container .personal button {
+    width: 200px;
+    margin-left: 10%;
+    font-size: 2.6rem;
+  }
+}
 @media (max-width: 500px) {
   .container .personal button {
     margin-left: 10%;
@@ -467,6 +714,11 @@ html {
   padding-top: 80px;
   display: flex;
 }
+@media (max-width: 800px) {
+  .container .health {
+    padding-top: 60px;
+  }
+}
 @media (max-width: 500px) {
   .container .health {
     flex-direction: column;
@@ -483,8 +735,14 @@ html {
   }
 }
 .container .health .healthSection h2 {
+  padding-top: 50px;
   padding-left: 10%;
   padding-bottom: 20px;
+}
+@media (max-width: 800px) {
+  .container .health .healthSection h2 {
+    padding-top: 20px;
+  }
 }
 @media (max-width: 500px) {
   .container .health .healthSection h2 {
@@ -493,6 +751,11 @@ html {
 }
 .container .health .healthSection p {
   line-height: 3rem;
+}
+@media (max-width: 800px) {
+  .container .health .healthSection p {
+    font-size: 2.1rem;
+  }
 }
 @media (max-width: 500px) {
   .container .health .healthSection p {
@@ -514,6 +777,12 @@ html {
 .container .health .healthSection button:hover {
   background-color: black;
   color: #22bcb9;
+}
+@media (max-width: 800px) {
+  .container .health .healthSection button {
+    width: 200px;
+    font-size: 2.6rem;
+  }
 }
 @media (max-width: 500px) {
   .container .health .healthSection button {
@@ -537,15 +806,20 @@ html {
   .container .health img {
     width: 97%;
     margin-left: 2%;
+    padding-left: 0;
   }
 }
 .container .box {
   margin-top: 70px;
   border: 1px solid black;
-  height: 950px;
   width: 98%;
   margin-left: 1%;
   margin-right: 1%;
+}
+@media (max-width: 500px) {
+  .container .box {
+    display: none;
+  }
 }
 .container .box .menu {
   display: flex;
@@ -554,18 +828,22 @@ html {
 .container .box .menu .tabs {
   width: 100%;
   display: flex;
+  flex-direction: column;
+}
+@media (max-width: 800px) {
+  .container .box .menu .tabs p {
+    font-size: 2.3rem;
+  }
 }
 .container .box .menu .oneItem {
   border-bottom: 1px solid black;
   padding: 30px;
-  width: 100%;
   padding-left: 5%;
   background-image: linear-gradient(#22bcb9, white);
 }
 .container .box .menu .oneItemColorChange {
   border-bottom: 1px solid black;
   padding: 30px;
-  width: 100%;
   padding-left: 5%;
   background-color: #22bcb9;
 }
@@ -578,6 +856,6 @@ html {
 .container .box .childrenschedule {
   height: 700px;
 }
-.container .box .someschedule {
+.container .box .catchupschedule {
   height: 700px;
 }
