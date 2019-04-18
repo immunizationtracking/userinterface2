@@ -397,16 +397,31 @@ html {
   margin-right: 1%;
   height: 400px;
 }
+.container .person .boxPerson img {
+  height: 270px;
+  width: auto;
+}
+@media (max-width: 900px) {
+  .container .person .boxPerson {
+    width: 46%;
+  }
+}
 @media (max-width: 800px) {
   .container .person .boxPerson {
     width: 40%;
-    margin-left: 5%;
+    margin-left: 3%;
+  }
+}
+@media (max-width: 700px) {
+  .container .person .boxPerson {
+    width: 98%;
   }
 }
 @media (max-width: 500px) {
   .container .person .boxPerson {
     width: 98%;
     margin-top: 15px;
+    margin-left: 1%;
   }
 }
 .container img {

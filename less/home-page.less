@@ -36,13 +36,24 @@ html {
       margin-left: 1%; //responsive margin using %
       margin-right: 1%; //responsive margin using %
       height: 400px;
+      img {
+        height: 270px;
+        width: auto;
+      }
+      @media (max-width: 900px){ //added so pictures of developers don't collide.
+        width: 46%;
+      }
       @media @tablet {
         width: 40%;
-        margin-left: 5%; //responsive margin using %
+        margin-left: 3%; //responsive margin using %
+      }
+      @media (max-width: 700px){ //added so pictures of developers don't collide.
+        width: 98%;
       }
       @media @mobile {
         width: 98%;
         margin-top: 15px;
+        margin-left: 1%;
       }
     }
   }
