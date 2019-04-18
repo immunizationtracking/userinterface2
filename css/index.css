@@ -392,7 +392,7 @@ html {
 }
 .container .person .boxPerson {
   width: 31%;
-  margin-top: 30px;
+  margin-top: 60px;
   margin-left: 1%;
   margin-right: 1%;
   height: 400px;
@@ -403,6 +403,16 @@ html {
 }
 .container .person .boxPerson .github {
   height: 40px;
+  margin-bottom: 7px;
+}
+.container .person .boxPerson .linkedin {
+  height: 30px;
+  margin-left: 60px;
+  margin-bottom: 10px;
+}
+.container .person .boxPerson .twitter {
+  height: 50px;
+  margin-left: 50px;
 }
 @media (max-width: 900px) {
   .container .person .boxPerson {
