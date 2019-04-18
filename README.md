@@ -1,6 +1,13 @@
 # userinterface2
 user interface repository 2nd repo
 
+
+I built user interface multipage marketing website.  The marketing page describes to the users what it is for and who it is for.
+Html, Css (used Less), and javascript were used to accomplish this task.  Notes are in Html, css and javascript to help readability.  In javascript I have a component for
+my accordion that new info can easily be added to the page with different data-tabs to achieve the same look.  
+The website is responsive at different widths but mainly responsive to desktop, tablet and desktop widths as well as some width between those to fix asthetic issues.
+Sign In and Log In buttons link to the Front End architect.
+Site hosted by netlify.
 # Web User Interface Developer Role
 
 ## **Role Description**
