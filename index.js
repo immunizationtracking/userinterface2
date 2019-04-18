@@ -4,7 +4,7 @@ class Menu {
   constructor(attrs){
     this.attrs = attrs;
     this.data = this.attrs.dataset.tab;
-    this.attrs.addEventListener('mouseover', () => this.changeColor()); //to change color on mouseover
+    this.attrs.addEventListener('mouseover', () => this.changeColor()); //to change color on mouseover(hover couldn't handle this request because background-image and background color)
     this.attrs.addEventListener('mouseleave', () => this.changeBack()); //to remove color on mouseleave
     this.attrs.addEventListener('click', () => this.changePhotos());
   }
