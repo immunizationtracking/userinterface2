@@ -401,6 +401,9 @@ html {
   height: 270px;
   width: auto;
 }
+.container .person .boxPerson .github {
+  height: 40px;
+}
 @media (max-width: 900px) {
   .container .person .boxPerson {
     width: 46%;
